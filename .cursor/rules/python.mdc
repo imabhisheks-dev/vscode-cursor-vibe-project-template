@@ -1,0 +1,12 @@
+---
+description: Python coding style, structure, and reliability standards.
+globs: "**/*.py"
+alwaysApply: false
+---
+
+# Python Instructions
+
+- Follow PEP 8 and keep functions focused.
+- Use type hints for public functions where practical.
+- Handle errors explicitly and log actionable messages.
+- Add tests for bug fixes and new behavior.

@@ -1,0 +1,13 @@
+---
+description: Baseline coding rules that apply to every file in the repository.
+alwaysApply: true
+---
+
+# General Coding Instructions
+
+Use straightforward, readable implementations.
+
+- Favor explicit naming.
+- Keep changes scoped to the requested task.
+- Include tests when behavior changes.
+- Document non-obvious decisions in code comments or docs.

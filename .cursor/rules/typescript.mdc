@@ -1,0 +1,12 @@
+---
+description: TypeScript and TSX-specific quality and safety conventions.
+globs: "**/*.ts,**/*.tsx"
+alwaysApply: false
+---
+
+# TypeScript Instructions
+
+- Prefer strict typing over any.
+- Model domain data with interfaces or types.
+- Validate external input at boundaries.
+- Keep React components small and composable.

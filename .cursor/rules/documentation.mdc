@@ -1,0 +1,12 @@
+---
+description: Writing and structure conventions for markdown documentation.
+globs: "docs/**/*.md"
+alwaysApply: false
+---
+
+# Documentation Instructions
+
+- Prefer concise, task-oriented sections.
+- Include examples for commands and configuration.
+- Keep headings stable to avoid broken links.
+- Update docs in the same change that alters behavior.

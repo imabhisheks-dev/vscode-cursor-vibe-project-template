@@ -1,0 +1,21 @@
+---
+description: Repository-wide coding standards and workflow expectations for Cursor.
+alwaysApply: true
+---
+
+# Repository Instructions
+
+## Coding Standards
+
+- Prefer clear, maintainable code over clever shortcuts.
+- Keep functions focused and small.
+- Add or update tests for behavior changes.
+- Validate user input and fail safely.
+- Avoid destructive commands or data operations unless explicitly requested.
+
+## Workflow Expectations
+
+- Explain tradeoffs when multiple options are reasonable.
+- Preserve existing project conventions before introducing new ones.
+- Keep dependencies minimal and justified.
+- Include short, practical documentation updates with code changes.
