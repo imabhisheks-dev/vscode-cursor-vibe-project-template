@@ -1,0 +1,27 @@
+{
+  "_comment": "Claude hook settings. Keep valid JSON; use README for deeper explanations.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "./scripts/block-dangerous.sh",
+        "timeout": 30
+      },
+      {
+        "type": "command",
+        "command": "./scripts/log-tool-use.sh",
+        "timeout": 30
+      }
+    ],
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "./scripts/format-changed-files.sh",
+        "timeout": 30,
+        "windows": {
+          "command": "powershell -ExecutionPolicy Bypass -File scripts/format-changed-files.ps1"
+        }
+      }
+    ]
+  }
+}

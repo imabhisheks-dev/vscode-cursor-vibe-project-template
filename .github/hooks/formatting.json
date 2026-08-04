@@ -1,0 +1,23 @@
+{
+  "_comment": "PostToolUse formatter hook for edit-like operations.",
+  "hooks": {
+    "PreToolUse": [],
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "./scripts/format-changed-files.sh",
+        "timeout": 30,
+        "windows": {
+          "command": "powershell -ExecutionPolicy Bypass -File scripts/format-changed-files.ps1"
+        },
+        "linux": {
+          "command": "./scripts/format-changed-files.sh"
+        },
+        "osx": {
+          "command": "./scripts/format-changed-files.sh"
+        },
+        "note": "Formats changed files when possible; safe no-op when formatter is unavailable."
+      }
+    ]
+  }
+}

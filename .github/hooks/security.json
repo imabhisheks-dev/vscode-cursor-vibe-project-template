@@ -1,0 +1,23 @@
+{
+  "_comment": "PreToolUse safety hook that blocks obviously dangerous shell/database commands.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "./scripts/block-dangerous.sh",
+        "timeout": 30,
+        "windows": {
+          "command": "bash ./scripts/block-dangerous.sh"
+        },
+        "linux": {
+          "command": "./scripts/block-dangerous.sh"
+        },
+        "osx": {
+          "command": "./scripts/block-dangerous.sh"
+        },
+        "note": "Denies dangerous requests using permissionDecision=deny when a blocked pattern is detected."
+      }
+    ],
+    "PostToolUse": []
+  }
+}

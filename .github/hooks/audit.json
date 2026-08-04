@@ -1,0 +1,23 @@
+{
+  "_comment": "PreToolUse auditing hook that logs tool activity to a repository file.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "./scripts/log-tool-use.sh",
+        "timeout": 30,
+        "windows": {
+          "command": "bash ./scripts/log-tool-use.sh"
+        },
+        "linux": {
+          "command": "./scripts/log-tool-use.sh"
+        },
+        "osx": {
+          "command": "./scripts/log-tool-use.sh"
+        },
+        "note": "Appends timestamp + tool metadata to .github/hooks/audit.log."
+      }
+    ],
+    "PostToolUse": []
+  }
+}
